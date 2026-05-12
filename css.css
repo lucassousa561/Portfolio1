@@ -1,0 +1,161 @@
+/* RESET BÁSICO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo da pagina */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* menu */
+header{
+    background-color: #222;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* menu2 */
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+}
+
+/* links */
+.menu li{
+    margin: 0 15px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* efeito hover */
+.menu a:hover{
+    color: #00bcd4;
+}
+
+/*  principal */
+.principal{
+    padding-top: 120px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* rodape */
+.rodape{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* titulos */
+h1{
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* listas */
+ul{
+    margin-left: 20px;
+}
+
+/* portfólio */
+.projetos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* projeto */
+.projeto{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #ddd;
+}
+
+/* botoes e links */
+.projeto a,
+button{
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.projeto a:hover,
+button:hover{
+    background-color: #0097a7;
+}
+
+/* formulario */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* area de texto */
+textarea{
+    resize: none;
+    height: 120px;
+}
+
+/* rodape */
+footer{
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/*  */
+@media(max-width: 768px){
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li{
+        margin: 10px 0;
+    }
+
+    .container{
+        padding-top: 180px;
+    }
+
+}
